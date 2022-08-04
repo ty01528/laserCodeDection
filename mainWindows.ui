@@ -324,19 +324,19 @@
               </property>
               <layout class="QHBoxLayout" name="horizontalLayout_11">
                <property name="spacing">
-                <number>0</number>
+                <number>4</number>
                </property>
                <property name="leftMargin">
                 <number>0</number>
                </property>
                <property name="topMargin">
-                <number>0</number>
+                <number>7</number>
                </property>
                <property name="rightMargin">
                 <number>0</number>
                </property>
                <property name="bottomMargin">
-                <number>0</number>
+                <number>3</number>
                </property>
                <item>
                 <widget class="QFrame" name="label1">
@@ -1227,19 +1227,19 @@
               </property>
               <layout class="QHBoxLayout" name="horizontalLayout_28">
                <property name="spacing">
-                <number>0</number>
+                <number>4</number>
                </property>
                <property name="leftMargin">
                 <number>0</number>
                </property>
                <property name="topMargin">
-                <number>0</number>
+                <number>7</number>
                </property>
                <property name="rightMargin">
                 <number>0</number>
                </property>
                <property name="bottomMargin">
-                <number>0</number>
+                <number>3</number>
                </property>
                <item>
                 <widget class="QFrame" name="label17">

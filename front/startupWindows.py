@@ -27,7 +27,7 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setWindowModality(QtCore.Qt.ApplicationModal)
         MainWindow.setEnabled(True)
-        MainWindow.resize(1415, 872)
+        MainWindow.resize(1131, 711)
         MainWindow.setMouseTracking(False)
         MainWindow.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
         MainWindow.setAutoFillBackground(False)
@@ -75,7 +75,7 @@ class Ui_MainWindow(object):
         self.camStatus = QtWidgets.QLabel(self.Camframe)
         self.camStatus.setText("")
         self.camStatus.setObjectName("camStatus")
-        self.horizontalLayout_5.addWidget(self.camStatus)
+        self.horizontalLayout_5.addWidget(self.camStatus, 0, QtCore.Qt.AlignHCenter | QtCore.Qt.AlignVCenter)
         self.label = QtWidgets.QLabel(self.Camframe)
         self.label.setText("")
         self.label.setObjectName("label")
@@ -184,8 +184,8 @@ class Ui_MainWindow(object):
         self.res.setFont(font)
         self.res.setObjectName("res")
         self.horizontalLayout_11 = QtWidgets.QHBoxLayout(self.res)
-        self.horizontalLayout_11.setContentsMargins(0, 0, 0, 0)
-        self.horizontalLayout_11.setSpacing(0)
+        self.horizontalLayout_11.setContentsMargins(0, 7, 0, 3)
+        self.horizontalLayout_11.setSpacing(4)
         self.horizontalLayout_11.setObjectName("horizontalLayout_11")
         self.label1 = QtWidgets.QFrame(self.res)
         font = QtGui.QFont()
@@ -566,8 +566,8 @@ class Ui_MainWindow(object):
         self.res_2.setFont(font)
         self.res_2.setObjectName("res_2")
         self.horizontalLayout_28 = QtWidgets.QHBoxLayout(self.res_2)
-        self.horizontalLayout_28.setContentsMargins(0, 0, 0, 0)
-        self.horizontalLayout_28.setSpacing(0)
+        self.horizontalLayout_28.setContentsMargins(0, 7, 0, 3)
+        self.horizontalLayout_28.setSpacing(4)
         self.horizontalLayout_28.setObjectName("horizontalLayout_28")
         self.label17 = QtWidgets.QFrame(self.res_2)
         font = QtGui.QFont()
@@ -990,7 +990,6 @@ class Ui_MainWindow(object):
                            "8px;  border:1px solid black;background:green "
         self.redCircle = "min-width: 16px; min-height: 16px;max-width:16px; max-height: 16px;border-radius: 8px;  " \
                          "border:1px solid black;background:red"
-        self.Video.setPixmap(QPixmap('front/icon/logo.jpg'))
         self.dectProgess.setVisible(False)
         self.onLunch()
         self.Video.setScaledContents(True)
@@ -1059,6 +1058,8 @@ class Ui_MainWindow(object):
         self.startDec.clicked.connect(self.startDection)
         self.rescue.clicked.connect(self.rescueCam)
 
+        self.Video.setPixmap(QPixmap('front/icon/logo.jpg'))
+
     # 将摄像头的图片传递给LABEL
     def setImage(self, image):
         self.Video.setPixmap(QPixmap.fromImage(image))
@@ -1084,7 +1085,7 @@ class Ui_MainWindow(object):
     def rescueCam(self):
         self.isCamOpen = True
         self.th1.start()
-        self.displayRes(None, clear=True)
+        self.displayRes(None, None, clear=True)
         self.resPicFirst.clear()
         self.resPicSecond.clear()
         self.Reslabel.setText("-- 等待检测 --")
@@ -1112,7 +1113,8 @@ class Ui_MainWindow(object):
         cv2.imwrite("temp.png", result)
         self.dectProgess.setValue(80)
         # 读取临时图片准备识别
-        pic, ret = self.pro.getRes("pic/1.bmp", self.dectProgess)
+        # 否则应读取temp.png图片
+        pic, ret, preds = self.pro.getRes("pic/1.bmp", self.dectProgess)
         cv2.imwrite("temp0.png", pic[0])
         cv2.imwrite("temp1.png", pic[1])
 
@@ -1124,7 +1126,7 @@ class Ui_MainWindow(object):
 
         self.Reslabel.setVisible(True)
         self.dectProgess.setVisible(False)
-        self.displayRes(ret)
+        self.displayRes(ret, preds)
         self.Video.setPixmap(QPixmap('draw.png'))
         self.resPicFirst.setPixmap(QPixmap('temp1.png'))
         self.resPicSecond.setPixmap(QPixmap('temp0.png'))
@@ -1136,22 +1138,42 @@ class Ui_MainWindow(object):
         # return self.Video.setPixmap(QPixmap.fromImage(image))
 
     # 用于两张图片下的值的显示
-    def displayRes(self, res, clear=False):
+    def displayRes(self, res, preds, clear=False):
         self.dis1 = [self.res1, self.res2, self.res3, self.res4, self.res5, self.res6, self.res7, self.res8, self.res9,
                      self.res10, self.res11, self.res12, self.res13, self.res14, self.res15, self.res16]
         self.dis2 = [self.res17, self.res18, self.res19, self.res20, self.res21, self.res22, self.res23, self.res24,
                      self.res25, self.res26, self.res27, self.res28, self.res29, self.res30, self.res31, self.res32]
+        self.label_1 = [
+            self.label1, self.label2, self.label3, self.label4, self.label5, self.label6, self.label7, self.label8,
+            self.label9, self.label10, self.label11, self.label12, self.label13, self.label14, self.label15,
+            self.label16]
+        self.label_2 = [
+            self.label17, self.label18, self.label19, self.label20, self.label21, self.label22, self.label23,
+            self.label24, self.label25, self.label26, self.label27, self.label28, self.label29, self.label30,
+            self.label31, self.label32]
         if clear is True:
             for i in range(0, 16):
                 self.dis1[i].setText('#')
+                self.label_1[i].setStyleSheet("background-color: rgb(218, 227, 243);")
             for i in range(0, 16):
                 self.dis2[i].setText('#')
+                self.label_2[i].setStyleSheet('background-color: rgb(218, 227, 243);')
             self.finalRes.setText("--------------------------------")
         else:
             for i in range(0, 16):
                 self.dis1[i].setText(res[0][i])
+                if preds[0][i] < 0.92:
+                    self.label_1[i].setStyleSheet("background-color: rgb(255, 0, 0);")
+                else:
+                    self.label_1[i].setStyleSheet('background-color: rgb(0, 255, 0);')
+
             for i in range(0, 16):
                 self.dis2[i].setText(res[1][i])
+                if preds[1][i] < 0.92:
+                    self.label_2[i].setStyleSheet('background-color: rgb(255, 0, 0);')
+                else:
+                    self.label_2[i].setStyleSheet('background-color: rgb(0, 255, 0);')
+
             res0 = ''.join(res[0])
             res1 = ''.join(res[1])
             rec_result = res0 + res1
@@ -1170,15 +1192,15 @@ class Process(QThread):
 
     def getRes(self, img, process=QtWidgets.QProgressBar):
         # collect dynamic shape by auto_tune
-        process.setValue(82)
+        process.setValue(30)
         if use_auto_tune(self.args):
             auto_tune(self.args, img)
-        process.setValue(85)
+        process.setValue(65)
         result, img = self.predictor.run(img)
         process.setValue(90)
-        pic, ret = self.startRec(result, img)
+        pic, ret, preds = self.startRec(result, img)
         process.setValue(98)
-        return pic, ret
+        return pic, ret, preds
 
     def startRec(self, result, img):
         # 最麻烦的就是这里，需要对矩阵做转换才能提取出图像中的信息
@@ -1205,7 +1227,7 @@ class Process(QThread):
         # for bbox in bounding_boxes:
         #     [x, y, w, h] = bbox
         #     cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
-        imgs, res = [], []
+        imgs, res, preds = [], [], []
         for cnt in contours:
             rect = cv2.minAreaRect(cnt)  # 得到最小外接矩形的（中心(x,y), (宽,高), 旋转角度）
             # print(f"最小外接矩形的角度为{rect[1][1]}")
@@ -1228,9 +1250,14 @@ class Process(QThread):
             # image = np.hstack((imgs[1], imgs[0]))
             # cv2.imshow('1', image)
             # cv2.waitKey()
-            res.append(start_rec().start(imgs[1]))
-            res.append(start_rec().start(imgs[0]))
+            res_temp, preds_temp = start_rec().start(imgs[1])
+            res.append(res_temp)
+            preds.append(preds_temp)
+
+            res_temp, preds_temp = start_rec().start(imgs[0])
+            res.append(res_temp)
+            preds.append(preds_temp)
         except:
             print('找不到激光码！')
             res, imgs = None, None
-        return imgs, res
+        return imgs, res, preds

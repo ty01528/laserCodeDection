@@ -304,7 +304,7 @@ class TextRecognizer(object):
         # rec_result = self.postprocess_op(preds)
         if self.benchmark:
             self.autolog.times.end(stamp=True)
-        return res, time.time() - st
+        return res, time.time() - st, preds_prob
 
 
 class start_rec:
@@ -333,7 +333,7 @@ class start_rec:
         if img is None:
             logger.info("error in loading image:{}".format(img))
         try:
-            rec_res, _ = text_recognizer(img)
+            rec_res, _, preds = text_recognizer(img)
 
         except Exception as E:
             logger.info(traceback.format_exc())
@@ -345,4 +345,4 @@ class start_rec:
 
         if self.args.benchmark:
             text_recognizer.autolog.report()
-        return rec_res
+        return rec_res, preds
