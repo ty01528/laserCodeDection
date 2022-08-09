@@ -12,8 +12,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1094</width>
-    <height>720</height>
+    <width>1032</width>
+    <height>783</height>
    </rect>
   </property>
   <property name="mouseTracking">
@@ -2609,8 +2609,8 @@ background-color: rgb(170, 85, 0);</string>
               </property>
               <property name="maximumSize">
                <size>
-                <width>500</width>
-                <height>200</height>
+                <width>1000</width>
+                <height>400</height>
                </size>
               </property>
               <property name="font">
@@ -2637,8 +2637,8 @@ background-color: rgb(170, 85, 0);</string>
               </property>
               <property name="maximumSize">
                <size>
-                <width>500</width>
-                <height>200</height>
+                <width>1000</width>
+                <height>400</height>
                </size>
               </property>
               <property name="font">

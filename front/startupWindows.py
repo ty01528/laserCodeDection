@@ -1094,16 +1094,18 @@ class Ui_MainWindow(object):
         self.horizontalLayout_6.setSpacing(0)
         self.horizontalLayout_6.setObjectName("horizontalLayout_6")
         self.rescue = QtWidgets.QPushButton(self.buttom)
-        self.rescue.setMaximumSize(QtCore.QSize(300, 100))
+        self.rescue.setMinimumSize(QtCore.QSize(0, 100))
+        self.rescue.setMaximumSize(QtCore.QSize(1000, 400))
         font = QtGui.QFont()
         font.setFamily("HarmonyOS Sans SC Medium")
         font.setPointSize(20)
         self.rescue.setFont(font)
         self.rescue.setStyleSheet("background-color: rgb(255, 0, 0);")
         self.rescue.setObjectName("rescue")
-        self.horizontalLayout_6.addWidget(self.rescue)
+        self.horizontalLayout_6.addWidget(self.rescue, 0, QtCore.Qt.AlignBottom)
         self.startDec = QtWidgets.QPushButton(self.buttom)
-        self.startDec.setMaximumSize(QtCore.QSize(300, 100))
+        self.startDec.setMinimumSize(QtCore.QSize(0, 100))
+        self.startDec.setMaximumSize(QtCore.QSize(1000, 400))
         font = QtGui.QFont()
         font.setFamily("HarmonyOS Sans SC Medium")
         font.setPointSize(20)
@@ -1112,7 +1114,7 @@ class Ui_MainWindow(object):
         self.startDec.setStyleSheet("background-color: rgb(0, 255, 0);")
         self.startDec.setAutoRepeatDelay(300)
         self.startDec.setObjectName("startDec")
-        self.horizontalLayout_6.addWidget(self.startDec)
+        self.horizontalLayout_6.addWidget(self.startDec, 0, QtCore.Qt.AlignBottom)
         self.verticalLayout_4.addWidget(self.buttom)
         self.verticalLayout_4.setStretch(0, 2)
         self.verticalLayout_4.setStretch(1, 7)
@@ -1206,6 +1208,8 @@ class Ui_MainWindow(object):
         # 显示时间
         self.timeDisplay = disTime(self.LocalTime)
         self.timeDisplay.start()
+        # 开启结果展示的点击函数调用
+        self.resClick()
         # 显示状态
         # self.camStatusDisplay = disCamStatus(self.camStatus)
         # self.camStatusDisplay.start()
@@ -1227,7 +1231,8 @@ class Ui_MainWindow(object):
         # 这里是定义结果修改的鼠标点击事件
         self.resClickEvent()
 
-        self.nowSelect = None
+        self.nowSelectBG = None
+
     # 将摄像头的图片传递给LABEL
     def setImage(self, image):
         self.Video.setPixmap(QPixmap.fromImage(image))
@@ -1241,6 +1246,29 @@ class Ui_MainWindow(object):
     def start(self):
         print("starting....")
         self.th1.start()
+
+    # 定义结果按钮的连接
+    def resClick(self):
+        self.button0.clicked.connect(lambda: self.resButtonClickEvent(0))
+        self.button1.clicked.connect(lambda: self.resButtonClickEvent(1))
+        self.button2.clicked.connect(lambda: self.resButtonClickEvent(2))
+        self.button3.clicked.connect(lambda: self.resButtonClickEvent(3))
+        self.button4.clicked.connect(lambda: self.resButtonClickEvent(4))
+        self.button5.clicked.connect(lambda: self.resButtonClickEvent(5))
+        self.button6.clicked.connect(lambda: self.resButtonClickEvent(6))
+        self.button7.clicked.connect(lambda: self.resButtonClickEvent(7))
+        self.button8.clicked.connect(lambda: self.resButtonClickEvent(8))
+        self.button9.clicked.connect(lambda: self.resButtonClickEvent(9))
+        self.button0_2.clicked.connect(lambda: self.resButtonClickEvent(0))
+        self.button1_2.clicked.connect(lambda: self.resButtonClickEvent(1))
+        self.button2_2.clicked.connect(lambda: self.resButtonClickEvent(2))
+        self.button3_2.clicked.connect(lambda: self.resButtonClickEvent(3))
+        self.button4_2.clicked.connect(lambda: self.resButtonClickEvent(4))
+        self.button5_2.clicked.connect(lambda: self.resButtonClickEvent(5))
+        self.button6_2.clicked.connect(lambda: self.resButtonClickEvent(6))
+        self.button7_2.clicked.connect(lambda: self.resButtonClickEvent(7))
+        self.button8_2.clicked.connect(lambda: self.resButtonClickEvent(8))
+        self.button9_2.clicked.connect(lambda: self.resButtonClickEvent(9))
 
     # 这里是所有插槽或者说是线程的初始化
     def initModel(self):
@@ -1385,14 +1413,24 @@ class Ui_MainWindow(object):
 
     def changeResTop(self, MyQLabel):
         self.widget_2.setVisible(True)
-        self.nowSelect = MyQLabel
-        MyQLabel.setStyleSheet("background-color: rgb(255, 255, 0);")
+        if self.nowSelectBG is not None:
+            self.nowSelectBG.setStyleSheet("background-color: rgb(0, 47, 167);")
+        self.nowSelectBG = MyQLabel
+        print(self.nowSelectBG.objectName())
+        self.nowSelectBG.setStyleSheet("background-color: rgb(255, 255, 0);")
 
     def changeResButtom(self, MyQLabel):
         self.widget_3.setVisible(True)
+        if self.nowSelectBG is not None:
+            self.nowSelectBG.setStyleSheet("background-color: rgb(0, 47, 167);")
+        self.nowSelectBG = MyQLabel
         MyQLabel.setStyleSheet("background-color: rgb(255, 255, 0);")
 
+    def resButtonClickEvent(self, val):
+        self.nowSelectBG.setText(val)
 
+
+# 这里是识别的流程
 class Process(QThread):
     def __init__(self, agrs=parse_args()):
         super().__init__()
@@ -1475,6 +1513,7 @@ class Process(QThread):
         return imgs, res, preds
 
 
+# 重写MyLabel 实现Label的点击动作
 class MyQLabel(QtWidgets.QLabel):
     # 自定义信号, 注意信号必须为类属性
     button_clicked_signal = QtCore.pyqtSignal()
