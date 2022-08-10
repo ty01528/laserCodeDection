@@ -12,8 +12,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1032</width>
-    <height>783</height>
+    <width>1211</width>
+    <height>906</height>
    </rect>
   </property>
   <property name="mouseTracking">
@@ -329,836 +329,515 @@
                <property name="bottomMargin">
                 <number>3</number>
                </property>
-               <item>
-                <widget class="QFrame" name="label1">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res1">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="lineWidth">
+                  <number>0</number>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_27">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res1">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                 <property name="indent">
+                  <number>0</number>
+                 </property>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label2">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_26">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res2">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label3">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
+                 </property>
+                 <property name="cursor">
+                  <cursorShape>ArrowCursor</cursorShape>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="midLineWidth">
+                  <number>0</number>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_25">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res3">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label4">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_24">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res4">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label5">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res5">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_23">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res5">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label6">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res6">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_22">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res6">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label7">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res7">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_21">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res7">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label8">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res8">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_20">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res8">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label9">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res9">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_19">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res9">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label10">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res10">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_18">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res10">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label11">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res11">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_17">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res11">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label12">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res12">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_16">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res12">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label13">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res13">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_15">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res13">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label14">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res14">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_14">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res14">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label15">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res15">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_13">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res15">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label16">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res16">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_12">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res16">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
               </layout>
@@ -1455,112 +1134,20 @@ background-color: rgb(170, 85, 0);</string>
                <property name="bottomMargin">
                 <number>3</number>
                </property>
-               <item>
-                <widget class="QFrame" name="label17">
-                 <property name="font">
-                  <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
-                  </font>
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res17">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
                  </property>
-                 <property name="accessibleDescription">
-                  <string notr="true"/>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
-                 </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_29">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res17">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
-               </item>
-               <item>
-                <widget class="QFrame" name="label18">
-                 <property name="font">
-                  <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
-                  </font>
-                 </property>
-                 <property name="accessibleDescription">
-                  <string notr="true"/>
-                 </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
-                 </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_30">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res18">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
-               </item>
-               <item>
-                <widget class="QFrame" name="label19">
                  <property name="font">
                   <font>
                    <family>Segoe UI</family>
@@ -1570,101 +1157,28 @@ background-color: rgb(170, 85, 0);</string>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_31">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res19">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label20">
-                 <property name="font">
-                  <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
-                  </font>
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res18">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
                  </property>
-                 <property name="accessibleDescription">
-                  <string notr="true"/>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
-                 </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_32">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res20">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
-               </item>
-               <item>
-                <widget class="QFrame" name="label21">
                  <property name="font">
                   <font>
                    <family>Segoe UI</family>
@@ -1674,257 +1188,28 @@ background-color: rgb(170, 85, 0);</string>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_33">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res21">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label22">
-                 <property name="font">
-                  <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
-                  </font>
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res19">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
                  </property>
-                 <property name="accessibleDescription">
-                  <string notr="true"/>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
-                 </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_34">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res22">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
-               </item>
-               <item>
-                <widget class="QFrame" name="label23">
-                 <property name="font">
-                  <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
-                  </font>
-                 </property>
-                 <property name="accessibleDescription">
-                  <string notr="true"/>
-                 </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
-                 </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_35">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res23">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
-               </item>
-               <item>
-                <widget class="QFrame" name="label24">
-                 <property name="font">
-                  <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
-                  </font>
-                 </property>
-                 <property name="accessibleDescription">
-                  <string notr="true"/>
-                 </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
-                 </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_36">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res24">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
-               </item>
-               <item>
-                <widget class="QFrame" name="label25">
-                 <property name="font">
-                  <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
-                  </font>
-                 </property>
-                 <property name="accessibleDescription">
-                  <string notr="true"/>
-                 </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
-                 </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
-                 </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_37">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res25">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
-               </item>
-               <item>
-                <widget class="QFrame" name="label26">
                  <property name="font">
                   <font>
                    <family>Segoe UI</family>
@@ -1934,49 +1219,28 @@ background-color: rgb(170, 85, 0);</string>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_38">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res26">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label27">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res20">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
                    <family>Segoe UI</family>
@@ -1986,49 +1250,28 @@ background-color: rgb(170, 85, 0);</string>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_39">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res27">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label28">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res21">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
                    <family>Segoe UI</family>
@@ -2038,49 +1281,28 @@ background-color: rgb(170, 85, 0);</string>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_40">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res28">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label29">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res22">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
                    <family>Segoe UI</family>
@@ -2090,201 +1312,322 @@ background-color: rgb(170, 85, 0);</string>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_41">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res29">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label30">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res23">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_42">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res30">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label31">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res24">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_43">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res31">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
                 </widget>
                </item>
-               <item>
-                <widget class="QFrame" name="label32">
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res25">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
                  <property name="font">
                   <font>
-                   <family>HarmonyOS Sans SC Medium</family>
-                   <pointsize>12</pointsize>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
                   </font>
                  </property>
                  <property name="accessibleDescription">
                   <string notr="true"/>
                  </property>
-                 <property name="frameShape">
-                  <enum>QFrame::StyledPanel</enum>
+                 <property name="text">
+                  <string>1</string>
                  </property>
-                 <property name="frameShadow">
-                  <enum>QFrame::Raised</enum>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <layout class="QHBoxLayout" name="horizontalLayout_44">
-                  <property name="spacing">
-                   <number>0</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>0</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>0</number>
-                  </property>
-                  <item alignment="Qt::AlignHCenter">
-                   <widget class="QLabel" name="res32">
-                    <property name="font">
-                     <font>
-                      <family>Segoe UI</family>
-                      <pointsize>22</pointsize>
-                     </font>
-                    </property>
-                    <property name="accessibleDescription">
-                     <string notr="true"/>
-                    </property>
-                    <property name="text">
-                     <string>1</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res26">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
+                 <property name="accessibleDescription">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res27">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
+                 <property name="accessibleDescription">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res28">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
+                 <property name="accessibleDescription">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res29">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
+                 <property name="accessibleDescription">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res30">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
+                 <property name="accessibleDescription">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res31">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
+                 <property name="accessibleDescription">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+                <widget class="QLabel" name="res32">
+                 <property name="minimumSize">
+                  <size>
+                   <width>30</width>
+                   <height>50</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>40</width>
+                   <height>60</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Segoe UI</family>
+                   <pointsize>22</pointsize>
+                  </font>
+                 </property>
+                 <property name="accessibleDescription">
+                  <string notr="true"/>
+                 </property>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
                 </widget>
                </item>
               </layout>
@@ -2583,6 +1926,12 @@ background-color: rgb(170, 85, 0);</string>
          </item>
          <item>
           <widget class="QWidget" name="buttom" native="true">
+           <property name="maximumSize">
+            <size>
+             <width>2000</width>
+             <height>400</height>
+            </size>
+           </property>
            <layout class="QHBoxLayout" name="horizontalLayout_6">
             <property name="spacing">
              <number>0</number>

@@ -346,3 +346,4 @@ class start_rec:
         if self.args.benchmark:
             text_recognizer.autolog.report()
         return rec_res, preds
+
