@@ -938,7 +938,7 @@ class Ui_MainWindow(object):
     def rescueCam(self):
         self.isCamOpen = True
         self.th1.start()
-        self.displayRes(None, None, clear=True)
+        self.initialDisplayRes(None, None, clear=True)
         self.resPicFirst.clear()
         self.resPicSecond.clear()
         self.widget_2.setVisible(False)
@@ -982,7 +982,7 @@ class Ui_MainWindow(object):
 
         self.Reslabel.setVisible(True)
         self.dectProgess.setVisible(False)
-        self.displayRes(ret, preds)
+        self.initialDisplayRes(ret, preds)
         self.Video.setPixmap(QPixmap('draw.png'))
         self.resPicFirst.setPixmap(QPixmap('temp1.png'))
         self.resPicSecond.setPixmap(QPixmap('temp0.png'))
@@ -994,7 +994,7 @@ class Ui_MainWindow(object):
         # return self.Video.setPixmap(QPixmap.fromImage(image))
 
     # 用于两张图片下的值的显示
-    def displayRes(self, res, preds, clear=False):
+    def initialDisplayRes(self, res, preds, clear=False):
         self.dis1 = [self.res1, self.res2, self.res3, self.res4, self.res5, self.res6, self.res7, self.res8, self.res9,
                      self.res10, self.res11, self.res12, self.res13, self.res14, self.res15, self.res16]
         self.dis2 = [self.res17, self.res18, self.res19, self.res20, self.res21, self.res22, self.res23, self.res24,
@@ -1028,6 +1028,17 @@ class Ui_MainWindow(object):
             rec_result = res0 + res1
             self.finalRes.setText(rec_result)
             print(rec_result)
+
+    def changeDisplayRes(self):
+        finalres = [self.res1.text(), self.res2.text(), self.res3.text(), self.res4.text(), self.res5.text(), self.res6.text(),
+                     self.res7.text(), self.res8.text(), self.res9.text(), self.res10.text(), self.res11.text(), self.res12.text(),
+                     self.res13.text(), self.res14.text(), self.res15.text(), self.res16.text(), self.res17.text(),
+                     self.res18.text(), self.res19.text(), self.res20.text(), self.res21.text(), self.res22.text(),
+                     self.res23.text(), self.res24.text(), self.res25.text(), self.res26.text(), self.res27.text(),
+                     self.res28.text(), self.res29.text(), self.res30.text(), self.res31.text(), self.res32.text()]
+        res = ''.join(finalres)
+        self.finalRes.setText(res)
+        print(res)
 
     def resClickEvent(self):
         self.res1.connect_customized_slot(lambda: self.changeResTop(self.res1))
@@ -1076,6 +1087,7 @@ class Ui_MainWindow(object):
             self.nowSelectBG = MyQLabel
             self.nowSelectBG.setStyleSheet("background-color: rgb(255, 255, 0);")
 
+
     def changeResButtom(self, MyQLabel):
         self.widget_2.setVisible(False)
         self.widget_3.setVisible(True)
@@ -1089,7 +1101,8 @@ class Ui_MainWindow(object):
             MyQLabel.setStyleSheet("background-color: rgb(255, 255, 0);")
 
     def resButtonClickEvent(self, val):
-        self.nowSelectBG.setText(val)
+        self.nowSelectBG.setText(str(val))
+        self.changeDisplayRes()
 
 
 # 这里是识别的流程
