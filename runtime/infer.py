@@ -26,10 +26,10 @@ from paddle.inference import Config as PredictConfig
 import paddleseg.transforms as T
 from paddleseg.cvlibs import manager
 from paddleseg.utils import get_sys_env, logger, get_image_list
-from predict_rec import start_rec
+from runtime.predict_rec import start_rec
 
 LOCAL_PATH = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(os.path.join(LOCAL_PATH, '..', '..'))
+sys.path.append(os.path.join(LOCAL_PATH, '../..', '..'))
 
 Pic_addr = "pic/3.bmp"
 

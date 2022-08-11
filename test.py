@@ -3,8 +3,8 @@ import os
 import cv2
 import numpy as np
 
-from infer import Rotate, use_auto_tune, auto_tune, parse_args, Predictor
-from predict_rec import start_rec
+from runtime.infer import Rotate, use_auto_tune, auto_tune, parse_args, Predictor
+from runtime.predict_rec import start_rec
 
 
 class Process():
