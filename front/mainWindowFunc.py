@@ -4,22 +4,22 @@ import numpy as np
 from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtCore import QTimer, QThread
 from PyQt5.QtGui import QPixmap
+from PyQt5.QtWidgets import QMainWindow
 from front.startupWindows import Ui_MainWindow
 from runtime.infer import Rotate, use_auto_tune, auto_tune, parse_args, Predictor
 from runtime.predict_rec import start_rec
-from ui.dispalyStatus import disTime
+from ui.dispalyStatus import disTime, disCamStatus
 from ui.displayCam import displayCam
 
 
 class uiFunction(Ui_MainWindow):
-    def startUi(self, mainWindow):
-        Ui_MainWindow.setupUi(mainWindow)
+    def startUi(self, window):
+        self.setupUi(window)
         self.dectProgess.setVisible(False)
         self.onLunch()
         self.Video.setScaledContents(True)
         self.resPicFirst.setScaledContents(True)
         self.resPicSecond.setScaledContents(True)
-        self.isCamOpen = True
 
     def onLunch(self):
         # 显示时间
@@ -28,8 +28,8 @@ class uiFunction(Ui_MainWindow):
         # 开启结果展示的点击函数调用
         self.resClick()
         # 显示状态
-        # self.camStatusDisplay = disCamStatus(self.camStatus)
-        # self.camStatusDisplay.start()
+        self.camStatusDisplay = disCamStatus(self.camStatus)
+        self.camStatusDisplay.start()
         # 调用摄像头并显示
         self.th1 = displayCam()
         self.th1.updateFrame.connect(self.setImage)
@@ -64,6 +64,7 @@ class uiFunction(Ui_MainWindow):
     # 开始启动摄像头
     def start(self):
         print("starting....")
+        self.th1.setCamStatus(True)
         self.th1.start()
 
     # 定义结果按钮的连接
@@ -98,7 +99,8 @@ class uiFunction(Ui_MainWindow):
 
     # 重置按钮事件操作
     def rescueCam(self):
-        self.isCamOpen = True
+
+        self.th1.setCamStatus(True)
         self.th1.start()
         self.initialDisplayRes(None, None, clear=True)
         self.resPicFirst.clear()
@@ -124,15 +126,15 @@ class uiFunction(Ui_MainWindow):
         result = result[..., :3]
 
         # 关线程
-        if self.isCamOpen:
+        if self.th1.getCamStatus():
             self.th1.kill_thread()
-            self.isCamOpen = False
+            self.th1.setCamStatus(False)
 
         cv2.imwrite("temp.png", result)
         self.dectProgess.setValue(80)
         # 读取临时图片准备识别
         # 否则应读取temp.png图片
-        pic, ret, preds = self.pro.getRes("pic/1.bmp", self.dectProgess)
+        pic, ret, preds = self.pro.getRes("pic/n4.jpg", self.dectProgess)
         cv2.imwrite("temp0.png", pic[0])
         cv2.imwrite("temp1.png", pic[1])
 
@@ -151,7 +153,7 @@ class uiFunction(Ui_MainWindow):
         os.remove('temp.png')
         os.remove('temp0.png')
         os.remove('temp1.png')
-        os.remove('draw.png')
+        # os.remove('draw.png')
         # print(type(result))
         # return self.Video.setPixmap(QPixmap.fromImage(image))
 
@@ -349,4 +351,3 @@ class Process(QThread):
             print('找不到激光码！')
             res, imgs = None, None
         return imgs, res, preds
-

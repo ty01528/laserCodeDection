@@ -16,16 +16,16 @@ class disTime(QtCore.QThread):
             time.sleep(1)
 
 
-# class disCamStatus(QtCore.QThread):
-#     def __init__(self, camStatuLabel=QtWidgets.QLabel, parent=None):
-#         super(disCamStatus, self).__init__(parent)
-#         self.camStatuLabel = camStatuLabel
-#         self.greenCircle = "min-width: 16px; min-height: 16px;max-width:16px; max-height: 16px;border-radius: " \
-#                            "8px;  border:1px solid black;background:green "
-#         self.redCircle = "min-width: 16px; min-height: 16px;max-width:16px; max-height: 16px;border-radius: 8px;  " \
-#                          "border:1px solid black;background:red"
-#
-#     def run(self):
-#         while (True):
-#             self.camStatuLabel.setStyleSheet(self.m_green_SheetStyle)
-#             time.sleep(1)
+class disCamStatus(QtCore.QThread):
+    def __init__(self, camStatuLabel=QtWidgets.QLabel, parent=None):
+        super(disCamStatus, self).__init__(parent)
+        self.camStatuLabel = camStatuLabel
+        self.greenCircle = "min-width: 16px; min-height: 16px;max-width:16px; max-height: 16px;border-radius: " \
+                           "8px;  border:1px solid black;background:green "
+        self.redCircle = "min-width: 16px; min-height: 16px;max-width:16px; max-height: 16px;border-radius: 8px;  " \
+                         "border:1px solid black;background:red"
+
+    def run(self):
+        while (True):
+            self.camStatuLabel.setStyleSheet(self.greenCircle)
+            time.sleep(1)
