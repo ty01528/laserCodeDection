@@ -1,7 +1,7 @@
 import os
 import cv2
 import numpy as np
-from PyQt5 import QtWidgets, QtCore
+from PyQt5 import QtWidgets
 from PyQt5.QtCore import QTimer, QThread
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import QMainWindow
@@ -118,6 +118,8 @@ class uiFunction(Ui_MainWindow):
 
         # 这里是图片格式的转换
         qimg = self.Video.pixmap().toImage()
+        if qimg is None:
+            return
         temp_shape = (qimg.height(), qimg.bytesPerLine() * 8 // qimg.depth())
         temp_shape += (4,)
         ptr = qimg.bits()
@@ -134,7 +136,7 @@ class uiFunction(Ui_MainWindow):
         self.dectProgess.setValue(80)
         # 读取临时图片准备识别
         # 否则应读取temp.png图片
-        pic, ret, preds = self.pro.getRes("pic/n4.jpg", self.dectProgess)
+        pic, ret, preds = self.pro.getRes("pic/1.bmp", self.dectProgess)
         cv2.imwrite("temp0.png", pic[0])
         cv2.imwrite("temp1.png", pic[1])
 
@@ -335,8 +337,8 @@ class Process(QThread):
         # for i in imgs:
         #     res.append(start_rec(i).start())
         try:
-            imgs[1] = cv2.resize(imgs[1], (380, 60), interpolation=cv2.INTER_CUBIC)
-            imgs[0] = cv2.resize(imgs[0], (380, 60), interpolation=cv2.INTER_CUBIC)
+            imgs[1] = cv2.resize(imgs[1], (320, 48), interpolation=cv2.INTER_CUBIC)
+            imgs[0] = cv2.resize(imgs[0], (320, 48), interpolation=cv2.INTER_CUBIC)
             # image = np.hstack((imgs[1], imgs[0]))
             # cv2.imshow('1', image)
             # cv2.waitKey()

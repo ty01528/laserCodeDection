@@ -50,7 +50,6 @@ class displayCam(QThread, QMainWindow):
             img = QImage(color_frame.data, w, h, ch * w, QImage.Format_RGB888)
             scaled_img = img.scaled(640, 480, Qt.KeepAspectRatio)
             self.updateFrame.emit(scaled_img)
-        # sys.exit(-1)
 
     def kill_thread(self):  # 希望线程暂停 保存图像然后再开启
         # self.th.is_lock = True

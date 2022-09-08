@@ -1,5 +1,6 @@
 import os
 
+import PIL.ImageShow
 import cv2
 import numpy as np
 
@@ -7,7 +8,7 @@ from runtime.infer import Rotate, use_auto_tune, auto_tune, parse_args, Predicto
 from runtime.predict_rec import start_rec
 
 
-class Process():
+class Process:
     def __init__(self, agrs=parse_args()):
         super().__init__()
         if agrs is None:
@@ -31,10 +32,18 @@ class Process():
         # (492, 656, 3)这是RGB矩阵的shape
         # 取三阶矩阵前两阶与二值化矩阵做叉乘
         # 灰度图的数据格式需要转换为符合RGB的uint8格式
+        #
+        # --> 这里是图片的预览窗口 <--
+        # result = result.transpose(1, 2, 0)
         # img = img * result.astype(np.uint8)
         # img = img[[not np.all(img[i] == [0, 0, 0]) for i in range(img.shape[0])], :]
         # img = img[:, [not np.all(img[:, i] == 0) for i in range(img.shape[1])]]
+        # cv2.imshow("1", img)
+        # cv2.waitKey(1000000000)
+        # return
+
         # 将矩阵转成opencv的MAT格式
+
         result = result.transpose(1, 2, 0)
         result = result.astype(np.uint8)
         # 这里将矩阵转换为MAT的8UC3类型
@@ -86,9 +95,17 @@ class Process():
 
 
 if __name__ == '__main__':
-    pro = Process()
-    pic, ret, _ = pro.getRes("pic/6.bmp")
-    cv2.imshow("pic", pic[0])
-    print(ret)
-    cv2.waitKey(100000)
-    os.remove('draw.png')
+    # pro = Process()
+    # pic, ret, _ = pro.getRes("pic/n4.jpg")
+    # cv2.imshow("pic", pic[0])
+    # print(ret)
+    # cv2.waitKey(100000)
+    # os.remove('draw.png')
+
+    # OCR的识别
+    img = cv2.imread("pic/newtest.jpg")
+    # img = cv2.resize(img, (640, 640), interpolation=cv2.INTER_CUBIC)
+    img = cv2.resize(img, (380, 60), interpolation=cv2.INTER_CUBIC)
+    res_temp, preds_temp = start_rec().start(img)
+    print(res_temp)
+    print(preds_temp)

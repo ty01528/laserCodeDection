@@ -313,7 +313,7 @@ class start_rec:
         self.args.rec_model_dir = "./ocr_model/en_PP-OCRv3_rec_infer/" if model is None else model
         self.args.rec_char_dict_path = "ocr_model/en_dict.txt" if dic is None else dic
         self.args.rec_image_shape = "3, 48, 320"
-        self.args.rec_batch_num = 2
+        self.args.rec_batch_num = 1
         self.args.max_text_length = 32
         self.args.use_space_char = False
         self.args.use_pdserving = False
@@ -329,7 +329,7 @@ class start_rec:
         # warmup 2 times
         img = self.args.image_dir
         if self.args.warmup:
-            img = np.random.uniform(0, 255, [60, 380, 3]).astype(np.uint8)
+            img = np.random.uniform(0, 255, [48, 320, 3]).astype(np.uint8)
         if img is None:
             logger.info("error in loading image:{}".format(img))
         try:
